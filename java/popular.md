@@ -25,3 +25,26 @@ public static int[] findTwoSum (int[] input, int target) {
 }
   
 ```
+
+2. Filter duplicates in an array of alpha numberic values to return a unique list.
+
+Input : [ "abcgdg34553", "ahsjd7787", "shdajhsd788", "ahsjd7787", "abcgdg34553"]
+
+Output: [ "abcgdg34553", "ahsjd7787", "shdajhsd788"]
+
+
+```java
+
+public static List<String>  filterDuplicates (String[] input) {
+    List<String> result = new ArrayList<String>();
+    Set<String> store = new HashSet<String>();
+    for (String val: input) {
+      if (!store.contains(val)) {
+        store.add(val);
+        result.add(val);
+      }
+    }
+    return result;
+  }
+  
+```
