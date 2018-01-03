@@ -23,7 +23,7 @@ public static int[] findTwoSum (int[] input, int target) {
      }
      return new int[]{0,0};
 }
-  
+
 ```
 
 2. Filter duplicates in an array of alpha numberic values to return a unique list.
@@ -46,5 +46,9 @@ public static List<String>  filterDuplicates (String[] input) {
     }
     return result;
   }
-  
+
 ```
+
+3. Implement an LRU Cache
+
+Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put.
